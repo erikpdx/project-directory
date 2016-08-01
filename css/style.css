@@ -1,0 +1,496 @@
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin: 0;
+    padding: 0;
+}
+.bar-positive{
+    position: relative;
+}
+.container{
+    position: relative;
+
+    clear: both;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+html,
+body{
+    overflow: scroll !important;
+}
+h1 { text-align: center; line-height: 100px; color: #fff;}
+header { height: 164px; border-bottom: 1px solid #0c23cc;
+    background: #387EF6;}
+.bar{
+    height: 100px;
+    padding: 25px 50px;
+}
+.bar .title{
+    font-size: 2.5em;
+
+    top: 50%;
+
+    transform: translateY(-55%);
+}
+h2{
+    font-size: 1.75em;
+
+    display: inline-block;
+}
+h2.toRight{
+    font-size: 1.75em;
+    line-height: 95px;
+
+    float: right;
+
+    color: #ccc;
+}
+h2.toRight:hover{
+    color: #999;
+}
+h2.toRight > span{
+    font-family: 'Ionicons';
+    font-size: 1.5em;
+
+    position: relative;
+    top: 5px;
+
+    margin-left: 10px;
+
+    content: '\f41b';
+}
+h4{
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+h2.toRight > .icon{
+    font-size: 1.5em;
+
+    position: relative;
+    top: 3px;
+
+}
+h2.toRight:hover > .icon{
+    color: #ff5918;
+}
+.search{
+    position: relative;
+    z-index: 9001;
+
+    padding: 10px 50px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #d2d2d2;
+    background: #f2f2f2;
+}
+a{
+
+    color: #387ef5;
+}
+a:hover{
+    color: #0c51bf;
+}
+.icon{
+    font-size: 4em;
+    line-height: 1.75em;
+
+    display: inline-block;
+
+    margin: 0 10px 0 0;
+
+    color: #ccc;
+}
+.seperator{
+    display: inline-block;
+
+    padding: 0 5px;
+
+    color: #d2d2d2;
+}
+button{
+    font-size: 14px;
+    font-weight: bold;
+
+    position: relative;
+    top: 1px;
+
+    margin-left: 25px;
+    padding: 10px 15px;
+
+
+    color: #fff;
+    border: none;
+    background: #ff5918;
+
+}
+button:active{
+    -webkit-transform: scale(.95, .95);
+        -ms-transform: scale(.95, .95);
+         -o-transform: scale(.95, .95);
+            transform: scale(.95, .95);
+}
+button#newEntry{
+    background: #ff5918;
+}
+
+button#newEntry:before{
+    font-family: 'Ionicons';
+    font-size: 16px;
+    font-weight: normal;
+
+    position: relative;
+    top: 1px;
+
+    margin-right: 5px;
+
+    content: '\f12f';
+}
+button#newEntry:hover{
+    background: #f43603;
+}
+.newEntryForm{
+    max-width: 830px;
+    margin: 0;
+    padding: 15px;
+}
+label,
+input,
+input[type='text'],
+select{
+    line-height: inherit;
+
+    display: inline-block;
+
+    height: auto;
+    padding: 10px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 0;
+    background: #fff;
+
+    -webkit-appearance: none;
+}
+select{
+    position: relative;
+
+    width: 150px;
+}
+select{
+
+    text-align: center;
+
+    color: #000;
+    outline: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'50px\' height=\'50px\'><polyline fill=\'#bbb\' points=\'46.139,15.518 25.166,36.49 4.193,15.519\'/></svg>');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 10px top 12px;
+    background-size: 16px 16px;
+
+    -webkit-appearance: none;
+}
+select:hover{
+    fill: #f00;
+}
+label{
+    font-weight: bold;
+
+    width: 125px;
+    margin-right: -6px;
+    margin-left: 15px;
+    padding: 10px 15px;
+
+    color: #fff;
+    border-color: #888;
+    border-radius: 0;
+    background: #999;
+
+    -webkit-font-smoothing: antialiased;
+}
+.overlay select, .editOverlay select{
+    width: 300px;
+}
+label:first-of-type{
+    margin-left: 0;
+}
+#search_box input[ng-model='query'],
+input[type='text']{
+    width: 300px;
+}
+div.items{
+    overflow: hidden;
+
+    border-bottom: 1px solid #f2f2f2;
+}
+.icon-wrapper{
+    display: table;
+    float: left;
+
+    height: 100%;
+}
+.info-wrapper .group{
+    position: relative;
+
+    float: left;
+
+    -webkit-transform: translateY(calc(50% - .5em));
+        -ms-transform: translateY(calc(50% - .5em));
+            transform: translateY(calc(50% - .5em));
+}
+.icon-wrapper i{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+select:after{
+    content: '';
+}
+.fixed{
+    position: fixed;
+    z-index: 9001;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    
+}
+.fixed:after{
+    position: absolute;
+    z-index: 9000;
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 35px;
+    margin-top: 1px;
+
+    content: '';
+
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+
+
+[data-tooltip]{
+    position: relative;
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after{
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before{
+    font-size: 14px;
+    line-height: 1.2;
+
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+
+    width: 160px;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+
+    content: attr(data-tooltip);
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, .9);
+}
+
+[data-tooltip]:after{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+
+    width: 0;
+    margin-left: -5px;
+
+    content: ' ';
+
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, .9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after{
+    visibility: visible;
+
+    opacity: 1;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+.project-item:hover .icon.live{
+    color: #34ba66;
+}
+.project-item:hover .icon.dev{
+    color: #ffd103;
+}
+.project-item:hover .icon.staged{
+    color: #d61818;
+}
+
+
+
+.overlay, .editOverlay{
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: table-cell;
+
+    width: 100%;
+
+    text-align: center;
+
+    background: rgba(0,0,0,.25);
+}
+.close-overlay{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.close-overlay:hover{
+    cursor: pointer;
+}
+.close-overlay:after{
+    font-family: 'Ionicons';
+    font-size: 32px;
+
+    content: '\f36e';
+
+    color: #c00;
+}
+.newEntryForm{
+    position: absolute;
+    z-index: 100001;
+    top: 50%;
+    left: 50%;
+
+    padding: 50px;
+
+    transform: translateY(-50%) translateX(-50%);
+    vertical-align: middle;
+
+    background: #fff; /* Or the actual color of your background/applied image */
+    background: #fff;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.overlay button, .editOverlay button{ 
+        float: right;
+    background: #34ba66;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.overlay button:before, .editOverlay button:before{
+    font-family: 'Ionicons';
+    font-size: 16px;
+    font-weight: normal;
+    webkit-font-smoothing: subpixel-antialiased;
+    position: relative;
+    top: 1px;
+background: #34ba66;
+    margin-right: 5px;
+    
+    content: '\f2c7';
+}
+.overlay h3, .editOverlay h3{
+    font-size: 2.5em;
+
+    margin-bottom: 20px;
+
+    color: #ff5918;
+}
+.overlay label, .editOverlay label{
+    border-color: #0c23cc ;
+    background: #387ef5;
+}
+.block{
+    margin-bottom: 10px;
+}
+
+.edit-form {  padding: 50px 0;}
+.edit-form input[type="text"] { position:relative;top:-1px }
+
+h2.toRight input { padding: inherit; font-size: inherit; font-weight: inherit; color: inherit; text-align: right;border:none;}
+
+.overlay button, .editOverlay button{
+    float: right;
+
+    background: #34ba66;
+}
+
+.fix-label{
+    position: relative;
+    top: -1px;
+}
+.editOverlay button { border: 3px solid transparent; margin: 0; font-weight: normal;}
+.editOverlay .button-delete,
+.editOverlay .button-confirm { float: left;color: #c00; border: 3px solid #c00; background-color: rgba(200,0,0,0);}
+.editOverlay .button-delete:before { background: transparent; content: "\f37f";}
+.editOverlay .button-confirm:before {background: transparent; content:"\f100";}
+
+.editOverlay .button-delete:hover,
+.editOverlay .button-delete:hover:before,
+.editOverlay .button-confirm:hover,
+.editOverlay .button-confirm:hover:before{
+    background: rgba(200,0,0,1);
+    color: #fff;
+}
+.copiedMessage {
+    position:absolute;
+    color:#ff5918;
+    top:63px;
+    right:25px;
+}
+.wdpText input {
+    cursor:pointer;
+}
+::selection {
+  background: #387EF6; 
+  color:#fff;
+}
+::-moz-selection {
+  background: #387EF6; 
+  color:#fff;
+}
